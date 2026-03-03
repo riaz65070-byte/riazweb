@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riaz Ullah | Journalist</title>
+<link rel="stylesheet" href="styles.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter', sans-serif;
+    background:#f6f4f1;
+    color:#1d1d1d;
+}
+
+/* Navigation */
+nav{
+    display:flex;
+    justify-content:space-between;
+    padding:30px 10%;
+    border-bottom:1px solid #ddd;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    margin-left:25px;
+    font-size:14px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+nav a:hover{
+    color:#c45b2b;
+}
+
+/* Hero Section */
+.hero{
+    padding:70px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.profile img{
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid #ddd;
+}
+
+.hero h1{
+    font-family:'Playfair Display', serif;
+    font-size:42px;
+    line-height:1.1;
+}
+
+.hero p{
+    margin-top:15px;
+    color:#555;
+    max-width:500px;
+}
+
+.badge{
+    margin-top:20px;
+}
+
+.badge span{
+    display:inline-block;
+    border:1px solid #bbb;
+    padding:5px 12px;
+    font-size:12px;
+    margin-right:10px;
+    border-radius:20px;
+}
+
+/* Filter Section */
+.filter{
+    padding:20px 10%;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+}
+
+.filter button{
+    background:none;
+    border:none;
+    margin-right:15px;
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    cursor:pointer;
+}
+
+.filter button:hover{
+    color:#c45b2b;
+}
+
+/* Article Grid */
+.grid{
+    padding:60px 10%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+    gap:35px;
+}
+
+.card{
+    background:white;
+    overflow:hidden;
+    transition:0.3s ease;
+    cursor:pointer;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card-content span{
+    font-size:11px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    color:#c45b2b;
+}
+
+.card-content h3{
+    margin-top:10px;
+    font-size:18px;
+    font-weight:500;
+    line-height:1.4;
+}
+
+/* Footer */
+footer{
+    padding:40px 10%;
+    border-top:1px solid #ddd;
+    text-align:center;
+    font-size:14px;
+    color:#666;
+}
+
+footer a{
+    color:#333;
+    text-decoration:none;
+    margin:0 10px;
+}
+
+footer a:hover{
+    color:#c45b2b;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .hero{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:30px;
+    }
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <div><strong>Riaz Ullah</strong></div>
+    <div>
+        <a href="#">Work</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <div>
+        <div class="profile">
+            <img src="profile.jpg" alt="Profile">
+            <div>
+                <h1>Riaz Ullah</h1>
+                <p>Bangladeshi journalist equipped with modern journalistic tools and the ability to craft stories that matter.</p>
+            </div>
+        </div>
+
+        <div class="badge">
+            <span>Politics</span>
+           
+            <span>Analysis</span>
+        </div>
+    </div>
+</section>
+
+<section class="filter">
+    <button>All</button>
+    <button>Reports</button>
+    <button>Features</button>
+    <button>Analysis</button>
+    <button>Opinion</button>
+</section>
+
+<section class="grid">
+<!-- muted
+    <div class="card">
+        <img src="article1.jpg">
+        <div class="card-content">
+            <span>Politics • June 2024</span>
+            <h3>Bangladesh's Interest in Selling Gas Security from Cross-border Concerns</h3>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="article2.jpg">
+        <div class="card-content">
+            <span>Analysis • May 2024</span>
+            <h3>A Gamestate Lobbying Scheme: How Trump's Tariff Changed the Game</h3>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="article3.jpg">
+        <div class="card-content">
+            <span>Economy • April 2024</span>
+            <h3>Economy in Question: Trump Wins Policies & Governing Challenges</h3>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="article4.jpg">
+        <div class="card-content">
+            <span>Longread • March 2024</span>
+            <h3>Hong Kong Finance Jobs Rebound After Talent Push</h3>
+        </div>
+    </div> -->
+<div class="grid">
+
+<!-- Article 1 -->
+<div class="card">
+<img src="article1.jpeg" alt="Happiness procrastination">
+<div class="card-content">
+<h3>Happiness procrastination: When to be happy</h3>
+<p><a href="https://www.dailypost.net/lifestyle/c7m" target="_blank" style="color:#66fcf1;text-decoration:none">Read Article</a></p>
+</div>
+</div>
+
+<!-- Article 2 -->
+<div class="card">
+<img src="https://www.dailypost.net/media/imgAll/2023September/Untitleddesign-2025-12-14T14564236-20251214090321.jpeg" alt="Fashion and Philosophy">
+<div class="card-content">
+<h3>Fashion and Philosophy: Why do we care about clothing?</h3>
+<p><a href="https://www.dailypost.net/lifestyle/c6x" target="_blank" style="color:#66fcf1;text-decoration:none">Read Article</a></p>
+</div>
+</div>
+
+<!-- Article 3 -->
+<div class="card">
+<img src="https://www.dailypost.net/media/imgAll/2023September/33-20260201141518.jpeg" alt="Between passion and the classroom">
+<div class="card-content">
+<h3>Between passion and the classroom: they find it hard to balance</h3>
+<p><a href="https://www.dailypost.net/sports/c9m" target="_blank" style="color:#66fcf1;text-decoration:none">Read Article</a></p>
+</div>
+</div>
+
+<!-- Article 4 -->
+<div class="card">
+<img src="https://www.observerbd.com/2025/05/31/ob_1748707385.jpg" alt="Monroe wartime soft power">
+<div class="card-content">
+<h3>How Monroe became US's wartime soft power?</h3>
+<p><a href="https://www.observerbd.com/news/528075" target="_blank" style="color:#66fcf1;text-decoration:none">Read Article</a></p>
+</div>
+</div>
+
+<!-- Article 5 -->
+<div class="card">
+<img src="https://www.observerbd.com/2025/08/15/ob_1755272947.jpg" alt="Bengal Divided">
+<div class="card-content">
+<h3>Bengal Divided: For which cause? At what cost?</h3>
+<p><a href="https://www.observerbd.com/news/539444" target="_blank" style="color:#66fcf1;text-decoration:none">Read Article</a></p>
+</div>
+</div>
+
+<!-- Article 6 -->
+<div class="card">
+<img src="https://www.observerbd.com/2025/01/05/ob_1736094086.jpg" alt="Media convergence">
+<div class="card-content">
+<h3>Will media convergence ensure press freedom?</h3>
+<p><a href="https://www.observerbd.com/news/506094" target="_blank" style="color:#66fcf1;text-decoration:none">Read Article</a></p>
+</div>
+</div>
+
+<!-- Article 7 -->
+<div class="card">
+<img src="http://apibangla.thefinancialexpress.com.bd/storage/posts/44724/jhilmil-baloon.jpg" alt="ঝিলিমিলি বেলুনের ঝলকানি">
+<div class="card-content">
+<h3>ঝিলিমিলি বেলুনের ঝলকানির আড়ালে শহুরে যত কথা</h3>
+<p><a href="https://bangla.thefinancialexpress.com.bd/lifestyle/jhilimili-beluner-jhlkanir-arale-shure-zt-ktha-1" target="_blank" style="color:#66fcf1;text-decoration:none">Read Article</a></p>
+</div>
+</div>
+
+<!-- Article 8 -->
+<div class="card">
+<img src="https://fe-bangla-bd.sgp1.digitaloceanspaces.com/posts/48618/eid-salami.png" alt="যুগে যুগে সালামি সংস্কৃতির বিবর্তন">
+<div class="card-content">
+<h3>যুগে যুগে সালামি সংস্কৃতির যে বিবর্তন</h3>
+<p><a href="https://bangla.thefinancialexpress.com.bd/lifestyle/zuge-zuge-salami-sngskrritir-bibrtn" target="_blank" style="color:#66fcf1;text-decoration:none">Read Article</a></p>
+</div>
+</div>
+
+</div>
+</section>
+
+<footer>
+    <p>Work updated in 2026</p>
+    <div>
+        <a href="https://www.facebook.com/beingrizzzz">Facebook</a>
+        <a href="https://www.linkedin.com/in/md-riaz-ullah-39179933a/">LinkedIn</a>
+        <a href="https://www.instagram.com/beingrizzzz/">Instagram</a>
+     
+    </div>
+</footer>
+
+</body>
+</html>
